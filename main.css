@@ -3,6 +3,7 @@ body{
     height: 800px;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -96,10 +97,11 @@ p{
 
 
 
-/* -------------Hover effect ---------------*/    
+
+/* -------------Second page---------------*/    
 
 .secondpage{
-    height: 1000px;
+    height: 1950px;
     background: url(images/bg.png);
     background-size: cover;
     background-position: center;
@@ -114,6 +116,14 @@ h2{
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 50px;
+}
+
+.projectimages{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 20px;
+    max-width: 80%;
+    margin: 0 auto; 
 }
     
 .container .title{
@@ -189,9 +199,94 @@ h2{
   top: 80%;
 }
     
-/* -------------Hover effect ---------------*/     
+/* -------------Second page---------------*/     
 
 
+/* -------------Third page---------------*/   
+
+.thirdpage{
+    height: 700px;
+}
+
+h4{
+    padding-top: 20px;
+    color: #343434;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.skills{
+    max-width: 300px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+h5{
+    margin-bottom: 5px;
+    color: #343434;
+}
+
+.html{
+    background-color: #4CD49B;
+    max-width: 200px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto; 
+    
+}
+
+.css{
+    background-color: #4CD49B;
+    max-width: 190px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+
+.js{
+    background-color: #4CD49B;
+    max-width: 180px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.jquery{
+    background-color: #4CD49B;
+    max-width: 180px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.nodejs{
+    background-color: #4CD49B;
+    max-width: 90px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.express{
+    background-color: #4CD49B;
+    max-width: 90px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.websiteimg{
+    max-width: 350px;
+}
+
+.websitediv{
+    max-width: 350px;
+    margin: 0 auto; 
+    padding-top: 50px;
+}
 
 @media only screen and (min-width: 1080px){
     body{
@@ -231,6 +326,10 @@ h2{
         padding-top: 206px;
     }
     
+    .secondpage{
+        height: 1200px;
+    }
+    
     .projectimages{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -238,4 +337,26 @@ h2{
         width: 60%;
         margin: 0 auto; 
     }
+    
+    .thirdpage{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+    h4{
+      margin-left: 150px;  
+    }
+    
+    .skills{
+        margin-left: 160px;
+    }
+    
+    .websiteimg{
+        max-width: 700px;
+    }
+    
+    .websitediv{
+        margin-left: 150px;
+    }
+    
 }
