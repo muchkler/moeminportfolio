@@ -288,6 +288,51 @@ h5{
     padding-top: 50px;
 }
 
+/* -------------Fourth page---------------*/
+
+
+
+.fourthpage{
+    height: 400px; 
+}
+
+.social{
+    width: 50px;
+    padding-left: 20px;
+}
+
+.social:hover{
+    transform:scale(1.2);
+}
+
+.socialicons{
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+h6{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #343434;
+    text-align: center; 
+    padding-top: 50px;
+    margin-bottom: 0;
+    line-height: 0;
+}
+
+.contactp{
+    text-align: center; 
+    font-family: 'Courgette', cursive;
+}
+
+.footer{
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
 @media only screen and (min-width: 1080px){
     body{
         height: 1000px;
