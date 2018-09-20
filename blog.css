@@ -1,0 +1,136 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 30;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none; 
+}
+.animateborder{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.animateborder::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #4CD49B;
+    transition: width .3s;
+}
+
+.animateborder:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar{
+    color: white; 
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.navbar li{
+    display: inline-block; 
+    font-size: 13px;
+    color: #4CD49B;
+    padding: 5px;
+}
+
+.here{
+    font-weight: 800;
+}
+
+
+.logo{
+    max-width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.moemin{
+    color: #4CD49B;
+}
+
+.logo{
+    font-family: 'Roboto', sans-serif;
+    color: #2E2E2E;
+    font-weight: 800;
+}
+
+.blogPost1{
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    color: #272727;
+}
+
+p{
+    line-height: 30px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    max-width: 900px;
+    opacity: 0.4;
+}
+
+.hrWrapper{
+    padding-bottom: 25px;
+}
+
+@media only screen and (min-width: 1080px){
+    body{
+        height: 1000px;
+    }
+    
+    .logo{
+        position: absolute; 
+        left: 150px;
+        max-width: 400px;
+        font-size: 20px;
+    }
+    
+    .navbar{
+        float: right;
+        padding-right: 150px;
+        max-width: 500px;
+    }
+    
+    .navbar-shadow{
+        box-shadow: 0px 0px 10px #CFCFCF;
+        height: 60px;
+    }
+    
+    .navbar li{
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 30px;
+    }
+
+    .blogPost1{
+        padding-top: 20px;
+        max-width: 1500px;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        max-width: 900px;
+        opacity: 0.4;
+    }
+
+    .hrWrapper{
+        padding-top: 25px;
+    }
+
+}
