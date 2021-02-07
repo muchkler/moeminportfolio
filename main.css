@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Cereal';
-  src: url(/fonts/AirbnbCerealBook.ttf);
+  src: url(fonts/AirbnbCerealBook.ttf);
   font-style: normal;
   font-weight: 100;
 }
 
 @font-face {
   font-family: 'Cereal';
-  src: url(/fonts/AirbnbCerealMedium.ttf);
+  src: url(fonts/AirbnbCerealMedium.ttf);
   font-style: normal;
   font-weight: 200;
 }
