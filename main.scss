@@ -1,0 +1,289 @@
+@font-face{
+    font-family: 'Cereal';
+    src: url(/fonts/AirbnbCerealBook.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Cereal';
+    src: url(/fonts/AirbnbCerealMedium.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cereal';
+    font-weight: 100;
+    font-size: 14px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left{
+        & a {
+            text-decoration: none;
+            color: black;
+            font-weight: 200;
+            font-size: 18px; 
+        }
+    }
+    &__btn{
+        display: flex;
+        background-color: #F5F9FA;
+        padding: 12px 30px;
+        border-radius: 999px;
+        &--left{
+            margin-right: 10px;
+            & a {
+                font-weight: 200;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.intro{
+    margin-top: 56px;
+    h1{
+        font-size: 48px;
+        font-weight: 200;
+        margin-bottom: 14px;
+        line-height: 1.25;
+    }
+    p{
+        margin-bottom: 24px;
+        font-size: 16px;
+        a {
+            font-weight: 200;
+            color: black;
+        }
+    }
+    &__btn{
+        display: inline-block;
+        color: black;
+        font-weight: 200;
+        text-decoration: none;
+        background-color: #F5F9FA;
+        padding: 12px 30px;
+        border-radius: 999px;
+    }
+}
+
+.projects{
+    display: flex;
+    margin-top: 56px;
+    &__type{
+        display: inline-block;
+        border-radius: 999px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 14px;
+    }
+    a{
+        font-weight: 200;
+        color: black;
+    }
+    &__card{
+        padding: 40px 40px 0px 40px;
+        border-radius: 10px; 
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+        img{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 14px;
+        }
+        & a {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.tools{
+    margin-top: 56px;
+    & h1{
+        margin-bottom: 24px;
+    }
+    &__grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__app{
+        text-align: center;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 6px;
+    }
+    &__wrapper{
+        h1 {
+            font-size: 14px;
+            font-weight: 100;
+            margin-top: 8px;
+            text-align: center;
+        }
+    }
+}
+
+.contact{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    background-color: #F5F9FA;
+    border-radius: 10px;
+    margin-top: 56px;
+    &__right{
+        height: 100%;
+        background-image: url('/images/Pattern@2x.png');
+        background-size: cover;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        padding: 80px;
+        & h1{
+            font-size: 36px;
+            line-height: 1.1;
+            margin-bottom: 14px;
+        }
+        & p {
+            color: #888888;
+            line-height: 1.5;
+        }
+        & span {
+            font-size: 36px;
+            margin-bottom: 18px;
+        }
+    }
+    &__socials{
+        display: flex;
+        flex-direction: column;
+        margin-top: 14px;
+        &--icon{
+            display: flex;
+        }
+        & .value{
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    &__facebook{
+        display: flex;
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+    &__icon{
+        margin-left: 3px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        height: 80vh;
+        &__left{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+    }
+
+    .intro{
+        h1{
+            font-size: 28px;
+            line-height: 1.4;
+        }
+        p{
+            line-height: 1.6;
+        }
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        &__facebook{
+            display: flex;
+            &:not(:last-child){
+                margin-bottom: 10px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .projects{
+        flex-wrap: wrap;
+        &__card{
+            &:not(:last-child){
+                margin-right: 0px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+
+
+.orange{
+    background-color: #FCF8F5;
+}
+.green{
+    background-color: #F5F9FA;
+}
+
+.darkOrange{
+    background-color: #FDB985;
+}
+
+.darkGreen{
+    background-color: #7DD9D0;
+}
+
+.xd { 
+    background-color: #F6F5FA;
+}
+
+.zeplin {
+    background-color: #FAF5F9;
+}
+
+.figma{
+    background-color: #F5FAF7;
+}
+
+.notion{
+    background-color:  #FAFAF5;
+}
+
+.ps{
+    background-color: #FAF5F5;
+}
